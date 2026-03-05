@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora:40-x86_64
+FROM quay.io/fedora/fedora:40-x86_64@sha256:0999a3ba385efc72b23f6d158a33c49379698c19c1002bd2329cb402e74a8151
 
 RUN dnf -y install make git sudo gcc rsync-daemon rsync openvswitch hostname && \
     dnf -y clean all
