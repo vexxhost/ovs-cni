@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM quay.io/centos/centos:stream9 AS builder
+FROM --platform=$BUILDPLATFORM quay.io/centos/centos:stream9@sha256:ea0d8c57e63ef7800e357bed25d9fb8da75d23cc41054cb807a39b1cb9fb2eb8 AS builder
 
 RUN mkdir /workdir
 # Support overriding target GOARCH during `make docker-build`
